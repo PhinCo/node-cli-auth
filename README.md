@@ -144,4 +144,5 @@ auth.isAuthenticated()
 		console.log( "Not logged in. Use mytool-login");
 		process.exit(1);
 	}
-});```
+});
+```
