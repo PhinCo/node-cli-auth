@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+var auth = require('@connectedyard/node-cli-auth');
+auth.logout();

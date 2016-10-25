@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+var auth = require('@connectedyard/node-cli-auth');
+auth.isAuthenticated()
+.then( function( authData ){
+	if( authData.name ){
+		console.log( authData.name );
+		process.exit(0);
+	}else{
+		console.log( "Not logged in. Use mytool-login");
+		process.exit(1);
+	}
+});
