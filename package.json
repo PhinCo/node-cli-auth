@@ -1,0 +1,27 @@
+{
+  "name": "@connectedyard/node-cli-auth",
+  "version": "1.0.1",
+  "description": "Simple module to for command line tool authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://homedad@github.com/PhinCo/node-cli-auth.git"
+  },
+  "keywords": [
+    "cli",
+    "auth"
+  ],
+  "author": "Connected Yard, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhinCo/node-cli-auth/issues"
+  },
+  "homepage": "https://github.com/PhinCo/node-cli-auth#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "lodash": "^4.16.4"
+  }
+}
