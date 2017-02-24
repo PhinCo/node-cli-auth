@@ -1,7 +1,7 @@
 {
   "name": "mytool-cli-example",
   "version": "1.0.0",
-  "description": "Example consumption of @connectedyard/node-cli-path",
+  "description": "Example consumption of node-cli-auth",
   "author": "Connected Yard, Inc.",
   "license": "MIT",
   "bugs": {
@@ -9,7 +9,6 @@
   },
   "homepage": "https://github.com/PhinCo/node-cli-auth#readme",
   "dependencies": {
-    "@connectedyard/node-cli-auth": "*",
     "commander": "^2.9.0"
   }
 }

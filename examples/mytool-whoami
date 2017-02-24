@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var auth = require('@connectedyard/node-cli-auth');
+var auth = require('..');
 auth.isAuthenticated()
 .then( function( authData ){
 	if( authData.name ){

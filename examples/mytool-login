@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var program = require( 'commander' );
-var auth = require('@connectedyard/node-cli-auth');
+var auth = require('..');
 
 program
 .option( '-e, --email [email]' )
@@ -11,11 +11,15 @@ if( !program.email || !program.password ){
 	console.error("required inputs missing");
 	process.exit(1);
 }
+
+console.log("Login data to be stored in ", auth.authFilePath() );
+
 auth.login( program.email, program.password )
 .then( function( authData ){
 	console.log("Logged in as " + program.email);
 })
 .catch( function( error ){
 	console.error("Failed to login as " + program.email);
+	console.error( error );
 	process.exit(1);
 });
