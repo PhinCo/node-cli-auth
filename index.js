@@ -2,6 +2,6 @@
 
 	'use strict';
 
-	module.exports = require('./lib/node-cli-auth');
+	module.exports = require('./lib/NodeAuth.js');
 
 })();

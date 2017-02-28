@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var program = require( 'commander' );
-var auth = require('..');
+var myToolAuth = require('./mytoolAuth');
 
 program
 .option( '-e, --email [email]' )
@@ -12,11 +12,11 @@ if( !program.email || !program.password ){
 	process.exit(1);
 }
 
-console.log("Login data to be stored in ", auth.authFilePath() );
+console.log("Login data to be stored in ", myToolAuth.authFilePath );
 
-auth.login( program.email, program.password )
+myToolAuth.login( { email: program.email, password: program.password } )
 .then( function( authData ){
-	console.log("Logged in as " + program.email);
+	console.log("Logged in as " + program.email );
 })
 .catch( function( error ){
 	console.error("Failed to login as " + program.email);

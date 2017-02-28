@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-var auth = require('..');
-auth.isAuthenticated()
+var myToolAuth = require('./mytoolAuth');
+myToolAuth.isAuthenticated()
 .then( function( authData ){
-	if( authData.name ){
-		console.log( authData.name );
+	if( authData.email ){
+		console.log( authData.email );
 		process.exit(0);
 	}else{
 		console.log( "Not logged in. Use mytool-login");
